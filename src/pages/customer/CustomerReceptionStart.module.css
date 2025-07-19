@@ -1,0 +1,71 @@
+/* ReceptionStart.module */
+.keySlots__cont {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.keySlots__item {
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.6rem;
+    height: 6.4rem;
+    color: var(--main-color);
+    font-size: 3.6rem;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.keySlots__item.active {
+    border: solid 1px var(--main-color);
+}
+
+.deleteButton {
+    display: block;
+    margin-left: auto;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: right;
+    color: var(--main-color);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: currentColor;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #a6a6a6;
+}
+
+.dividerLabel {
+    padding: 0 1rem;
+    color: #a6a6a6;
+    font-size: 1.2rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.qrInputArea {
+    margin-top: 0.8rem;
+    background-color: #E6FFFD;
+}
+
+.qrInputArea__txt {
+    margin-top: 1.6rem;
+    background-color: #fff;
+}

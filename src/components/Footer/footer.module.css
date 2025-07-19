@@ -1,0 +1,12 @@
+/* footer.module.css */
+.logo {
+    position: absolute;
+    width: 12%;
+    left: 50%;
+    transform: translate(-50%, 1rem);
+}
+
+.logo svg {
+    fill: var(--icon-secondary);
+
+}

@@ -1,0 +1,65 @@
+/* Modal.module.css */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  padding: 4rem 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.modalTitle {
+  font-size: 1.8rem;
+  color: var(--main-color);
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.modalDescription {
+  margin: 2rem 0;
+  margin-bottom: 4rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #484848;
+}
+
+.modalButton__item {
+  width: 20rem;
+  margin: auto;
+  padding: 2rem 4rem;
+  text-align: center;
+  border: none;
+  border-radius: 100px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+
+}
+
+.confirmButton {
+  margin-bottom: 2rem;
+  padding: 2rem 4rem;
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.cancelButton {
+  border: solid 1px var(--main-color);
+  color: var(--main-color);
+}

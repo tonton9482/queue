@@ -1,0 +1,114 @@
+/* Waiting.module.css */
+
+.wait__wrap {
+  margin: -4rem -2rem 0;
+  border-radius: 0rem 0rem 4rem 4rem;
+  background: conic-gradient(from 180deg at 50% 50%, #2ED 0deg, #009C90 360deg);
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.25);
+}
+
+.wait__num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  margin: auto;
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+.wait__num__count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10.8rem;
+  height: 10.8rem;
+  border-radius: 0.8rem;
+  background: var(--fff, #FFF);
+  color: var(--main-color);
+}
+
+.wait__num__kumi {
+  padding-right: 2.4rem;
+}
+
+.wait__num__text {
+  font-size: 7.2rem;
+  font-weight: 700;
+  line-height: 1;
+  transform: translateY(-0.1em);
+}
+
+/* progress */
+.progress__container {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  margin: 50px auto;
+  overflow-x: hidden;
+}
+
+/* プログレスバーの背景 */
+.progress__track {
+  position: relative;
+  width: 95%;
+  height: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  background-color: #ccc;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+/* プログレスバーの進行部分 */
+.progress__fill {
+  height: 100%;
+  background-color: #4fd1c7;
+  width: 60%;
+  /* 進行率を調整 */
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+/* 人物アイコン */
+.person__icon {
+  position: absolute;
+  top: 50%;
+  left: calc(100% - 40%);
+  /* 進行率に合わせて調整 */
+  transform: translate(-50%, -50%) scale(2.5);
+  z-index: 10;
+  transition: left 0.3s ease;
+  animation: shake 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+
+}
+
+@keyframes shake {
+
+  0% {
+    transform: translate(-50%, -50%) scale(2.5) rotate(8deg);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(2.5) rotate(-8deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(2.5) rotate(8deg);
+  }
+}
+
+/* 人物アイコン */
+.flag__icon {
+  position: absolute;
+  top: 50%;
+  left: calc(100% - 8%);
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  transition: left 0.3s ease;
+  background-color: #fff;
+  padding: 1.6rem;
+  border-radius: 100px;
+  margin: 0;
+}

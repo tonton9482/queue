@@ -1,0 +1,98 @@
+/* Button.module.css */
+.button {
+  width: 30rem;
+  min-width: 22rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin: auto;
+  text-align: center;
+  border: none;
+  border-radius: 100px;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+}
+
+.btnsize-M {
+  padding: 2rem 4rem;
+}
+
+.btnsize-L {
+  padding: 1.6rem 4rem;
+}
+
+.btnSize-M {
+  padding: 1.6rem 4rem;
+}
+
+.primary {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.outline {
+  border: solid 1px var(--main-color);
+  color: var(--main-color);
+}
+
+.hurryUp {
+  background-color: #EB0000;
+  color: #fff;
+}
+
+.fontsize-sm {
+  font-size: 2rem;
+}
+
+.fontsize-md {
+  font-size: 2.4rem;
+}
+
+.icon {
+  display: inline-block;
+  width: 2rem;
+  aspect-ratio: 1/1;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.icon-megaphone {
+  width: 2rem;
+  height: 2rem;
+  mask-image: url('../../assets/svg/megaphone.svg');
+  background-color: var(--icon-secondary);
+  background-repeat: no-repeat;
+}
+
+.icon-check {
+  width: 2rem;
+  height: 2rem;
+  mask-image: url('../../assets/svg/check.svg');
+  background-color: var(--icon-secondary);
+  background-repeat: no-repeat;
+}
+
+.icon-close {
+  width: 2rem;
+  height: 2rem;
+  mask-image: url('../../assets/svg/close.svg');
+  background-color: var(--icon-secondary);
+  background-repeat: no-repeat;
+}
+
+.icon-flag {
+  width: 2rem;
+  height: 2rem;
+  mask-image: url('../../assets/svg/flag.svg');
+  background-color: var(--icon-secondary);
+  background-repeat: no-repeat;
+}
+
+.icon-fire {
+  width: 2rem;
+  mask-image: url('../../assets/svg/fire.svg');
+  background-color: var(--icon-secondary);
+  background-repeat: no-repeat;
+}

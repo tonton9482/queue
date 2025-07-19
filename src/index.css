@@ -1,0 +1,67 @@
+/* global.css */
+
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 750px) {
+  html {
+    font-size: 2.666vw;
+  }
+}
+
+#root {
+  max-width: 750px;
+  text-align: center;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #F5F5F5;
+}
+
+:root {
+  --main-color: #00C7B7;
+  --icon-primary: #00C7B7;
+  --icon-secondary: #fff;
+}
+
+[data-theme="dark"] {
+  --icon-primary: #00C7B7;
+  --icon-secondary: #fff;
+}
+
+.icon-dark {
+  fill: var(--icon-primary);
+}
+
+.globalPadding {
+  padding: 4rem 2rem;
+}
+
+.py-4rem {
+  padding: 4rem 0rem;
+}
+
+.pt-4rem {
+  padding-top: 4rem;
+}
+
+.pb-4rem {
+  padding-bottom: 4rem;
+}
+
+.ptx-4rem {
+  padding: 4rem 2rem 0;
+}
+
+.pb-2_4rem {
+  padding-bottom: 2.4rem;
+}
+
+.btn-icon {
+  width: 2rem;
+  height: 2rem;
+  fill: var(--icon-primary);
+}
